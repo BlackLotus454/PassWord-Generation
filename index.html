@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PassWord Generator</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+            <div class="image">
+
+            </div>
+			<div class="container">
+				<div class="heading">PassWord Generator</div>
+				<div class="copy-section">
+					<input
+						readonly
+						placeholder="PassWord"
+						class="display-text"
+						displaypass />
+					<button class="copy-icon">
+						<span id="dataMsg"></span> <i class="fa-regular fa-copy"></i>
+					</button>
+				</div>
+				<div class="input-section">
+					<div class="length">
+						<p>Password Length</p>
+						<p data-length>1</p>
+					</div>
+					<div>
+						<input
+							type="range"
+							min="1"
+							max="20"
+							step="1"
+							class="slider"
+							id="myRange" />
+					</div>
+					<div  class="check">
+						<input type="checkbox" id="uppercase" />
+						<label for="uppercase">Include Uppercase Letters</label>
+					</div>
+					<div class="check">
+						<input type="checkbox" id="lowercase" />
+						<label for="lowercase">Include Lowercase Letters</label>
+					</div >
+					<div class="check">
+						<input type="checkbox" id="numbers" />
+						<label for="numbers">Include Numbers</label>
+					</div>
+					<div class="check">
+						<input type="checkbox" id="symbols" />
+						<label for="symbols">Include Symbols</label>
+					</div>
+
+					<div class="strength">
+						<p>Strength</p>
+						<div id="s-indicator"></div>
+					</div>
+					<button id="btn">Generate PassWord</button>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://kit.fontawesome.com/73c26f1748.js"
+			crossorigin="anonymous"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
